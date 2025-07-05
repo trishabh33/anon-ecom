@@ -10,7 +10,22 @@
       background-color: #f9f9f9;
       color: #333;
       padding: 1rem;
+      position: relative;
     }
+
+    body::before {
+      content: "";
+      background: url('avyansh.jpg') no-repeat center center;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.06;
+      z-index: -1;
+    }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -21,6 +36,7 @@
       position: relative;
       z-index: 1;
     }
+
     h1 {
       font-size: 2rem;
       color: #222;
@@ -28,21 +44,26 @@
       padding-bottom: 0.5rem;
       margin-bottom: 1.5rem;
     }
+
     p {
       line-height: 1.7;
       margin-bottom: 1rem;
     }
+
     ul {
       margin-left: 1.2rem;
       margin-bottom: 1rem;
     }
+
     li {
       margin-bottom: 0.5rem;
     }
+
     a {
       color: #0073e6;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
@@ -52,25 +73,10 @@
       color: #0073e6;
       font-weight: bold;
     }
-
-    .founder-background {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 6rem;
-      color: rgba(0, 115, 230, 0.05);
-      white-space: nowrap;
-      pointer-events: none;
-      z-index: 0;
-      user-select: none;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="founder-background">Avyansh Katiyar</div>
-
     <h1>About Fivizo</h1>
     <p>
       <strong>Fivizo</strong> is a next-generation e-commerce platform designed exclusively for the bold, expressive, and digitally native Gen Z community. Founded by 
