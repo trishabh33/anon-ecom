@@ -18,6 +18,8 @@
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
     }
     h1 {
       font-size: 2rem;
@@ -44,23 +46,40 @@
     a:hover {
       text-decoration: underline;
     }
-    .founder-photo {
-      max-width: 200px;
-      border-radius: 8px;
-      margin: 1rem 0;
-      display: block;
+
+    .founder-name {
+      font-size: 1.5rem;
+      color: #0073e6;
+      font-weight: bold;
+    }
+
+    .founder-background {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 6rem;
+      color: rgba(0, 115, 230, 0.05);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+      user-select: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="founder-background">Avyansh Katiyar</div>
+
     <h1>About Fivizo</h1>
     <p>
-      <strong>Fivizo</strong> is a next-generation e-commerce platform designed exclusively for the bold, expressive, and digitally native Gen Z community. Founded by <strong>Avyansh Katiyar</strong>, Fivizo was born out of a desire to create a shopping experience that’s not only seamless and fast—but deeply in tune with the identity and culture of a new generation of shoppers.
+      <strong>Fivizo</strong> is a next-generation e-commerce platform designed exclusively for the bold, expressive, and digitally native Gen Z community. Founded by 
+      <strong class="founder-name">Avyansh Katiyar</strong>, Fivizo was born out of a desire to create a shopping experience that’s not only seamless and fast—but deeply in tune with the identity and culture of a new generation of shoppers.
     </p>
 
-    <!-- Founder Photo -->
-    <img src="./assets/images/avy.jpeg" alt="Avyansh Katiyar - Founder of Fivizo" class="founder-photo" />
+    <p>
+      Funny thing is, the idea for Fivizo actually struck Avyansh while he was rage-scrolling through a dozen different online stores at 2 AM, trying to find a pair of socks that matched his vibe. Somewhere between “galaxy print” and “chicken nugget pattern,” he realized—Gen Z deserves better. So he closed his 43 open tabs, grabbed a notebook, and wrote: "Make a store that doesn’t suck." That note became the blueprint for Fivizo.
+    </p>
 
     <p>
       We offer a curated selection of trendy fashion, cutting-edge gadgets, lifestyle accessories, and creative essentials—all handpicked to match the unique tastes and dynamic needs of Gen Z. Whether you're a trendsetter, content creator, student, gamer, or simply someone who values style and authenticity, Fivizo is built for you.
@@ -89,7 +108,7 @@
     </p>
 
     <p>
-      Questions? Suggestions? Reach us at <a href="mailto:avyansh.katiyar@sprinklr.com">avyansh.katiyar@sprinklr.com</a>
+      Questions? Suggestions? Reach us at <a href="mailto:hello@fivizo.com">hello@fivizo.com</a>
     </p>
 
     <p><a href="index.html">← Back to Home</a></p>
